@@ -1,0 +1,142 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/commercialName"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/headquarterAddress"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/website"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/sizeOfCompany"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/logo"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/email"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/phoneNumber"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/linkedinProfile"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/effectiveControl"
+    },
+    {
+      "type": "Group",
+      "elements":[
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/namespace",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/commercialNameGroup",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/address",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/websiteGroup",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/sizeofGroup",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/emailGroup",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/group/properties/phoneNumberGroup",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#/properties/effectiveControl",
+              "schema": {
+                "const": "no"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+

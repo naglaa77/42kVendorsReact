@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "commercialName": {
+      "type": "string"
+    },
+    "headquarterAddress": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sizeOfCompany": {
+      "type": "string",
+      "title": "Size of Company",
+      "enum": ["A", "B", "C", "D", "E", "F", "G", "H", "I"]
+    },
+    "logo": {
+      "type": "string",
+      "format": "data-url"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "format": "tel",
+      "title": "Phone Number"
+    },
+    "linkedinProfile": {
+      "type": "string",
+      "format": "uri"
+    },
+    "effectiveControl": {
+      "type": "string",
+      "title": "Effective Control"
+    },
+    "group": {
+      "type": "object",
+      "properties": {
+        "namespace": {
+          "type": "string",
+          "title": "Name"
+        },
+        "commercialNameGroup": {
+          "type": "string",
+          "title": "Commercial Name"
+        },
+        "address": {
+          "type": "string",
+          "title": "Address"
+        },
+        "websiteGroup": {
+          "type": "string",
+          "title": "Website"
+        },
+        "sizeofGroup": {
+          "type": "string",
+          "title": "Size of group",
+          "enum": ["Self-employed", "1-10 employees", "11-50 employees", "51-200 employees", "201-500 employees", "501-1000 employees", "1001-5000 employees", "5001-10000 employees", "10001+ employees"]
+        },
+        "emailGroup": {
+          "type": "string",
+          "title": "Email"
+        },
+        "phoneNumberGroup": {
+          "type": "string",
+          "title": "Phone number"
+        }
+      }
+    }
+
+  },
+  "required": ["name", "commercialName", "headquarterAddress", "website", "email", "phoneNumber", "linkedinProfile", "effectiveControl"]
+}

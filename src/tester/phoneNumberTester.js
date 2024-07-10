@@ -1,0 +1,7 @@
+// src/tester/logoUploadTester.js
+import { rankWith, scopeEndsWith } from '@jsonforms/core';
+
+export default rankWith(
+    3,
+    scopeEndsWith('phoneNumber')
+);
