@@ -25,6 +25,13 @@ import LinkedinProfile from "./components/LinkedInProfile.jsx";
 import effectiveControlTester from "./tester/effectiveControlTester.js";
 import EffectiveControl from "./components/EffectiveControl.jsx";
 import {Box, Button} from "@mui/material";
+import CustomTextarea from "./components/CustomTextarea.jsx";
+import customTextareTester from "./tester/customTextareTester.js";
+import shortTextTester from "./tester/shortTextTester.js";
+import ShortText from "./components/ShortText.jsx";
+import c10Tester from "./tester/c10Tester.js";
+import C01 from "./components/C01.jsx";
+
 
 
 const initialData = {
@@ -45,6 +52,9 @@ const initialData = {
         sizeofGroup: "",
         emailGroup: "",
         phoneNumberGroup: ""
+    },
+    influence: {
+        c01: ''
     }
 };
 
@@ -60,7 +70,10 @@ const renderers = [
     { tester: phoneNumberTester, renderer: PhoneNumber },
     { tester: linkedinProfileTester, renderer: LinkedinProfile },
     { tester: effectiveControlTester, renderer: EffectiveControl },
-    // { tester:pitchDescription , renderer: PitchDescription }
+    { tester: customTextareTester, renderer: CustomTextarea },
+    { tester: shortTextTester, renderer: ShortText },
+     { tester: c10Tester, renderer: C01 },
+
 ];
 
 const App = () => {

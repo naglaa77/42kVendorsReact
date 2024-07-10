@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { withJsonFormsControlProps } from '@jsonforms/react';
 import CustomInputField from './CustomInputField';
 import PropTypes from 'prop-types';

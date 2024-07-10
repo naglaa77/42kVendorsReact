@@ -40,6 +40,12 @@
       "type": "string",
       "title": "Effective Control"
     },
+    "shortText": {
+      "type": "string"
+    },
+    "customTextarea": {
+      "type": "string"
+    },
     "group": {
       "type": "object",
       "properties": {
@@ -73,8 +79,16 @@
           "title": "Phone number"
         }
       }
+    },
+    "influence": {
+      "type": "object",
+      "properties": {
+        "c01": {
+          "type": "string",
+          "default": "bar"
+        }
+      }
     }
-
   },
   "required": ["name", "commercialName", "headquarterAddress", "website", "email", "phoneNumber", "linkedinProfile", "effectiveControl"]
 }
