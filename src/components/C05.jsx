@@ -10,13 +10,13 @@ const continents = [
 ];
 
 const C05 = ({ data = {}, handleChange, path }) => {
-    const [selectedValues, setSelectedValues] = useState(data.cV || []);
+    const [selectedValues, setSelectedValues] = useState(data.aV || []);
 
     useEffect(() => {
-        if (data.cV !== selectedValues) {
+        if (data.aV !== selectedValues) {
             handleChange(path, {
                 ...data,
-                cV: selectedValues
+                aV: selectedValues
             });
         }
     }, [selectedValues, handleChange, path, data]);
@@ -63,7 +63,8 @@ C05.propTypes = {
         qV: PropTypes.string,
         qU: PropTypes.string,
         typ: PropTypes.string,
-        cV: PropTypes.arrayOf(PropTypes.string),
+        cV: PropTypes.string,
+        aV: PropTypes.arrayOf(PropTypes.string),
         v: PropTypes.string,
         pt: PropTypes.string
     }),

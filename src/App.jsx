@@ -39,6 +39,10 @@ import c04Tester from "./tester/c04Tester.js";
 import C04 from "./components/C04.jsx";
 import c05Tester from "./tester/c05Tester.js";
 import C05 from "./components/C05.jsx";
+import c06Tester from "./tester/c06Tester.js";
+import C06 from "./components/C06.jsx";
+import c07Tester from "./tester/c07Tester.js";
+import C07 from "./components/C07.jsx";
 
 
 
@@ -67,6 +71,7 @@ const initialData = {
             qU: "Head office registered in:",
             typ: "uniqCountryCtrl",
             cV: "",
+            aV: "",
             v: "1.0",
             pt: "5"
         },
@@ -75,6 +80,7 @@ const initialData = {
             qU: "State(s)",
             typ: "shorttext",
             cV: "",
+            aV: "",
             v: "1.0",
             pt: "0"
         },
@@ -82,7 +88,8 @@ const initialData = {
             qV: "In which other countries are the VENDOR's strategic decision centers located?",
             qU: "Strategic decision centers in:",
             typ: "country list with multiple choices",
-            cV: [],
+            cV: "",
+            aV: [],
             v: "1.0",
             pt: "5"
         },
@@ -91,6 +98,7 @@ const initialData = {
             qU: "Quoted on a stock exchange",
             typ: "yesno",
             cV: "",
+            aV: "",
             v: "1.0",
             pt: ""
         },
@@ -98,9 +106,28 @@ const initialData = {
             qV: ": if yes, in which countries ?",
             qU: "in :",
             typ: "countries list with multiple choices",
-            cV: [],
+            cV: "",
+            aV: [],
             v: "1.0",
             pt: "5"
+        },
+        c06: {
+            qV: ": please provide the stock code(s) & stock market(s)",
+            qU: "stock code(s) & stock market(s)",
+            typ: "shorttext",
+            cV: "",
+            aV: "",
+            v: "1.0",
+            pt: "0"
+        },
+        c07: {
+            qV: "",
+            qU: "",
+            typ: "yesno",
+            cV: "",
+            aV: "",
+            v: "1.0",
+            pt: ""
         },
     }
 };
@@ -124,6 +151,8 @@ const renderers = [
     { tester: c03Tester, renderer: C03 },
     { tester: c04Tester, renderer: C04 },
     { tester: c05Tester, renderer: C05 },
+    { tester: c06Tester, renderer: C06 },
+    { tester: c07Tester, renderer: C07 },
 
 ];
 

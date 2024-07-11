@@ -101,6 +101,7 @@
             "qU": { "type": "string" },
             "typ": { "type": "string" },
             "cV": { "type": "string" },
+            "aV": { "type": "string" },
             "v": { "type": "string" },
             "pt": { "type": "string" }
           }
@@ -111,7 +112,8 @@
             "qV": { "type": "string" },
             "qU": { "type": "string" },
             "typ": { "type": "string" },
-            "cV": {
+            "cV": { "type": "string" },
+            "av": {
               "type": "array",
               "items": { "type": "string" }
             },
@@ -125,7 +127,8 @@
             "qV": { "type": "string" },
             "qU": { "type": "string" },
             "typ": { "type": "string" },
-            "cV": { "type": "string","enum": ["yes", "no"] },
+            "cV": { "type": "string" },
+            "aV": { "type": "string","enum": ["yes", "no"] },
             "v": { "type": "string" },
             "pt": { "type": "string" }
           }
@@ -136,10 +139,35 @@
             "qV": { "type": "string" },
             "qU": { "type": "string" },
             "typ": { "type": "string" },
-            "cV": {
+            "cV": { "type": "string" },
+            "aV": {
               "type": "array",
               "items": { "type": "string" }
             },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        },
+        "c06": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": { "type": "string" },
+            "aV": { "type": "string" },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        },
+        "c07": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": { "type": "string" },
+            "aV": { "type": "string","enum": ["yes", "no"] },
             "v": { "type": "string" },
             "pt": { "type": "string" }
           }

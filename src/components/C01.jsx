@@ -10,14 +10,15 @@ const continents = [
 ];
 
 const C01 = ({ data, handleChange, path }) => {
-    const [selectedValue, setSelectedValue] = useState(data.cV || "");
+    const [selectedValue, setSelectedValue] = useState(data.aV || "");
 
     useEffect(() => {
         handleChange(path, {
             qV: "In which country is the VENDOR's registered head office is established?",
             qU: "Head office registered in:",
             typ: "uniqCountryCtrl",
-            cV: selectedValue,
+            cV: "",
+            aV:selectedValue,
             v: "1.0",
             pt: "5"
         });

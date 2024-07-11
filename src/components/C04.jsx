@@ -9,14 +9,15 @@ const binaryOptions = [
 ];
 
 const C04 = ({ data, handleChange, path }) => {
-    const [selectedValue, setSelectedValue] = useState(data.cV || "");
+    const [selectedValue, setSelectedValue] = useState(data.aV || "");
 
     useEffect(() => {
         handleChange(path, {
             qV: "Is the VENDOR quoted on a stock exchange?",
             qU: "Quoted on a stock exchange",
             typ: "ynu",
-            cV: selectedValue,
+            cV: "",
+            aV: selectedValue,
             v: "1.0",
             pt: ""
         });
@@ -55,6 +56,7 @@ C04.propTypes = {
         qU: PropTypes.string,
         typ: PropTypes.string,
         cV: PropTypes.string,
+        aV: PropTypes.string,
         v: PropTypes.string,
         pt: PropTypes.string
     }),

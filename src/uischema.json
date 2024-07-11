@@ -197,6 +197,14 @@
                   "options": {
                     "multi": true
                   }
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c06"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c07"
                 }
               ]
             }

@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TextField, Box, Typography } from '@mui/material';
 import { withJsonFormsControlProps } from '@jsonforms/react';
 import PropTypes from 'prop-types';
 
-const C03 = ({ data, handleChange, path }) => {
-    const [fieldValue, setFieldValue] = useState(data.cV || '');
+const C06 = ({ data, handleChange, path }) => {
+    const [fieldValue, setFieldValue] = useState(data.aV || '');
 
     useEffect(() => {
         handleChange(path, {
-            qV: ": if applicable precise State(s)",
+            qV: ": please provide the stock code(s) & stock market(s)",
             qU: "State(s)",
             typ: "shorttext",
             cV: "",
-            aV:fieldValue,
+            aV: fieldValue,
             v: "1.0",
             pt: "0"
         });
@@ -40,12 +40,13 @@ const C03 = ({ data, handleChange, path }) => {
     );
 };
 
-C03.propTypes = {
+C06.propTypes = {
     data: PropTypes.shape({
         qV: PropTypes.string,
         qU: PropTypes.string,
         typ: PropTypes.string,
         cV: PropTypes.string,
+        aV: PropTypes.string,
         v: PropTypes.string,
         pt: PropTypes.string
     }),
@@ -53,4 +54,4 @@ C03.propTypes = {
     path: PropTypes.string.isRequired
 };
 
-export default withJsonFormsControlProps(C03);
+export default withJsonFormsControlProps(C06);
