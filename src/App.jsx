@@ -41,8 +41,18 @@ import c05Tester from "./tester/c05Tester.js";
 import C05 from "./components/C05.jsx";
 import c06Tester from "./tester/c06Tester.js";
 import C06 from "./components/C06.jsx";
-import c07Tester from "./tester/c07Tester.js";
-import C07 from "./components/C07.jsx";
+import h01Tester from "./tester/h01Tester.js";
+import H01 from "./components/H01.jsx";
+import H02 from "./components/H02.jsx";
+import h02Tester from "./tester/h02Tester.js";
+import h03Tester from "./tester/h03Tester.js";
+import H03 from "./components/H03.jsx";
+import H04 from "./components/H04.jsx";
+import h04Tester from "./tester/h04Tester.js";
+import H05 from "./components/H05.jsx";
+import h05Tester from "./tester/h05Tester.js";
+import h06Tester from "./tester/h06Tester.js";
+import H06 from "./components/H06.jsx";
 
 
 
@@ -120,15 +130,62 @@ const initialData = {
             v: "1.0",
             pt: "0"
         },
-        c07: {
-            qV: "",
-            qU: "",
-            typ: "yesno",
-            cV: "",
-            aV: "",
-            v: "1.0",
-            pt: ""
-        },
+        group: {
+            h01:{
+                qV: ": Do these entities have their registered head office or strategic decision centers not established in a Member State of the EU?",
+                qU: "These entities have their head office or strategic decision centers outside EU",
+                typ: "shorttext",
+                cV: "",
+                aV: "",
+                v: "1.0",
+                pt: "0"
+            },
+            h02:{
+                qV: "",
+                qU: "",
+                typ: "",
+                cV: "",
+                aV: "",
+                v: "1.0",
+                pt: "0"
+            },
+            h03:{
+                qV: ": For all entities HOLDING effective control of the VENDOR, in which countries are their registered head office and strategic decision centers established ?",
+                qU: "Countries where holding entities have head office and strategic decision centers",
+                typ: "countries list with multiple choice",
+                cV: "",
+                aV: "",
+                v: "1.0",
+                pt: "0"
+            },
+            h04:{
+                qV: "",
+                qU: "",
+                typ: "",
+                cV: "",
+                aV: "",
+                v: "1.0",
+                pt: ""
+            },
+            h05:{
+                qV: ":: if yes, in which countries ?",
+                qU: "in :",
+                typ: "countries list with multiple choice",
+                cV: "",
+                aV: "",
+                v: "1.0",
+                pt: "2"
+            },
+            h06:{
+                qV: "",
+                qU: "",
+                typ: "",
+                cV: "",
+                aV: "",
+                v: "",
+                pt: ""
+            }
+        }
     }
 };
 
@@ -152,7 +209,12 @@ const renderers = [
     { tester: c04Tester, renderer: C04 },
     { tester: c05Tester, renderer: C05 },
     { tester: c06Tester, renderer: C06 },
-    { tester: c07Tester, renderer: C07 },
+    { tester: h01Tester, renderer: H01 },
+    { tester: h02Tester, renderer: H02 },
+    { tester: h03Tester, renderer: H03 },
+    { tester: h04Tester, renderer: H04 },
+    { tester: h05Tester, renderer: H05 },
+    { tester: h06Tester, renderer: H06 },
 
 ];
 

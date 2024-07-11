@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { TextField, Autocomplete, Box, Typography, Tooltip } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import { withJsonFormsControlProps } from '@jsonforms/react';
@@ -36,7 +36,7 @@ const C07 = ({ data, handleChange, path }) => {
     return (
         <Box display="flex" alignItems="center" sx={{ mt: 2, width: "100%", mb: 2 }}>
             <Box sx={{ flex: 1, paddingRight: 1 }}>
-                <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem", fontWeight: "bold" }}>
+                <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem"}}>
                     {data.qV}
                 </Typography>
             </Box>
@@ -58,7 +58,7 @@ const C07 = ({ data, handleChange, path }) => {
                                     <>
                                         {params.InputProps.endAdornment}
                                         <Tooltip title={data.cV} arrow placement="top" PopperProps={{ sx: { backgroundColor: 'white' } }}>
-                                            <InfoIcon sx={{ ml: 1 }} />
+                                            <InfoIcon color="info"/>
                                         </Tooltip>
                                     </>
                                 )

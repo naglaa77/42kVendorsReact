@@ -40,7 +40,7 @@ const C01 = ({ data, handleChange, path }) => {
     return (
         <Box display="flex" alignItems="center" sx={{ mt: 2, width: "100%", mb: 2 }}>
             <Box sx={{ width: "50%", paddingRight: 1 }}>
-                <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem", fontWeight: "bold" }}>
+                <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem"}}>
                     In which country is the VENDOR's registered head office established?
                 </Typography>
             </Box>

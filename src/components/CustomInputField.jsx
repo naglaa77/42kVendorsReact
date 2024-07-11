@@ -2,6 +2,7 @@ import React from 'react';
 import { TextField, Tooltip, IconButton, Box, InputAdornment } from '@mui/material';
 import PropTypes from 'prop-types';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import InfoIcon from "@mui/icons-material/Info";
 
 const CustomInputField = ({ data, handleChange, path, label, tooltipTitle }) => {
     return (
@@ -15,13 +16,11 @@ const CustomInputField = ({ data, handleChange, path, label, tooltipTitle }) => 
                 required
                 InputProps={{
                     endAdornment: (
-                        <InputAdornment position="end">
-                            <Tooltip title={tooltipTitle} placement="bottom" arrow>
-                                <IconButton>
-                                    <ErrorOutlineIcon />
-                                </IconButton>
+                        <>
+                            <Tooltip title={tooltipTitle} arrow placement="top" PopperProps={{ sx: { backgroundColor: 'white' } }}>
+                                <InfoIcon color="info"/>
                             </Tooltip>
-                        </InputAdornment>
+                        </>
                     )
                 }}
             />

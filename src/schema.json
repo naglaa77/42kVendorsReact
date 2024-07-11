@@ -160,20 +160,19 @@
             "pt": { "type": "string" }
           }
         },
-        "c07": {
+        "group": {
           "type": "object",
           "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "aV": { "type": "string","enum": ["yes", "no"] },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
+            "h01": {"type": "object"},
+            "h02": {"type": "object"},
+            "h03": {"type": "object"},
+            "h04": {"type": "object"},
+            "h05": {"type": "object"},
+            "h06": {"type": "object"}
           }
         }
       },
-        "required": [ "c04"]
+      "required": ["c04"]
     }
   },
   "required": ["name", "commercialName", "headquarterAddress", "website", "email", "phoneNumber", "linkedinProfile", "effectiveControl"]

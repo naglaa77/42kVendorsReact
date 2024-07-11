@@ -8,18 +8,18 @@ const binaryOptions = [
     { label: "No", value: "no" }
 ];
 
-const C04 = ({ data, handleChange, path }) => {
-    const [selectedValue, setSelectedValue] = useState(data.aV || "");
+const H04 = ({ data, handleChange, path }) => {
+    const [selectedValue, setSelectedValue] = useState(data.aV || "no");
 
     useEffect(() => {
         handleChange(path, {
-            qV: "Is the VENDOR quoted on a stock exchange?",
-            qU: "Quoted on a stock exchange",
+            qV: ": Are those entities quoted on a stock exchange?",
+            qU: "Entities quoted on a stock exchange",
             typ: "ynu",
             cV: "",
             aV: selectedValue,
             v: "1.0",
-            pt: ""
+            pt: "0"
         });
     }, [selectedValue, handleChange, path]);
 
@@ -31,7 +31,7 @@ const C04 = ({ data, handleChange, path }) => {
         <Box display="flex" alignItems="center" sx={{ mt: 2, width: "100%", mb: 2 }}>
             <Box sx={{ flex: 1, paddingRight: 1 }}>
                 <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem"}}>
-                    Is the VENDOR quoted on a stock exchange?
+                    {data.qV}
                 </Typography>
             </Box>
             <Box sx={{ flex: 1, paddingLeft: 1 }}>
@@ -50,7 +50,7 @@ const C04 = ({ data, handleChange, path }) => {
     );
 };
 
-C04.propTypes = {
+H04.propTypes = {
     data: PropTypes.shape({
         qV: PropTypes.string,
         qU: PropTypes.string,
@@ -64,4 +64,4 @@ C04.propTypes = {
     path: PropTypes.string.isRequired
 };
 
-export default withJsonFormsControlProps(C04);
+export default withJsonFormsControlProps(H04);

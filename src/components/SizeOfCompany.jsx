@@ -2,6 +2,7 @@ import { Box, Select, MenuItem, FormControl, InputLabel, Tooltip, IconButton, In
 import { withJsonFormsControlProps } from '@jsonforms/react';
 import PropTypes from 'prop-types';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import InfoIcon from "@mui/icons-material/Info";
 
 const SizeOfCompany = ({ data, handleChange, path }) => {
     return (
@@ -20,7 +21,7 @@ const SizeOfCompany = ({ data, handleChange, path }) => {
                             <InputAdornment position="end">
                                 <Tooltip title="Vendor size" placement="bottom" arrow>
                                     <IconButton>
-                                        <ErrorOutlineIcon />
+                                        <InfoIcon color="info"/>
                                     </IconButton>
                                 </Tooltip>
                             </InputAdornment>

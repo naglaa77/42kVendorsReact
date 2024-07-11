@@ -58,106 +58,106 @@
                     {
                       "type": "Control",
                       "scope": "#/properties/customTextarea"
-                    }
-                  ]
-                },
-                {
-                  "type": "Control",
-                  "scope": "#/properties/effectiveControl"
-                },
-                {
-                  "type": "Group",
-                  "elements": [
-                    {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/namespace",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
                     },
                     {
                       "type": "Control",
-                      "scope": "#/properties/group/properties/commercialNameGroup",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
+                      "scope": "#/properties/effectiveControl"
                     },
                     {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/address",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
+                      "type": "Group",
+                      "elements":[
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/namespace",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/commercialNameGroup",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/address",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/websiteGroup",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group//properties//sizeofGroup",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/emailGroup",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/group/properties/phoneNumberGroup",
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "scope": "#/properties/effectiveControl",
+                              "schema": {
+                                "const": "no"
+                              }
+                            }
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/websiteGroup",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/sizeofGroup",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/emailGroup",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "Control",
-                      "scope": "#/properties/group/properties/phoneNumberGroup",
-                      "rule": {
-                        "effect": "DISABLE",
-                        "condition": {
-                          "scope": "#/properties/effectiveControl",
-                          "schema": {
-                            "const": "no"
-                          }
-                        }
-                      }
+                      ]
                     }
                   ]
                 }
@@ -182,10 +182,7 @@
                 },
                 {
                   "type": "Control",
-                  "scope": "#/properties/influence/properties/c03",
-                  "options": {
-                    "multi": true
-                  }
+                  "scope": "#/properties/influence/properties/c03"
                 },
                 {
                   "type": "Control",
@@ -193,18 +190,94 @@
                 },
                 {
                   "type": "Control",
-                  "scope": "#/properties/influence/properties/c05",
-                  "options": {
-                    "multi": true
-                  }
+                  "scope": "#/properties/influence/properties/c05"
                 },
                 {
                   "type": "Control",
                   "scope": "#/properties/influence/properties/c06"
                 },
                 {
-                  "type": "Control",
-                  "scope": "#/properties/influence/properties/c07"
+                  "type": "Group",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h01",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h02",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h03",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h04",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h05",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/h06",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
+                    }
+                  ]
                 }
               ]
             }

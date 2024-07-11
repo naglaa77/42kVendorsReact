@@ -9,7 +9,7 @@ const continents = [
     { continent: "Asia", countries: ["China", "Japan", "India", "South Korea", "Indonesia"] }
 ];
 
-const C05 = ({ data = {}, handleChange, path }) => {
+const H03 = ({ data = {}, handleChange, path }) => {
     const [selectedValues, setSelectedValues] = useState(data.aV || []);
 
     useEffect(() => {
@@ -38,7 +38,7 @@ const C05 = ({ data = {}, handleChange, path }) => {
         <Box display="flex" alignItems="center" sx={{ mt: 2, width: "100%", mb: 2 }}>
             <Box sx={{ flex: 1, paddingRight: 1 }}>
                 <Typography variant="h6" sx={{ mb: 1, alignSelf: 'flex-start', fontSize: "1rem"}}>
-                    {data.qV || "Loading question..."}
+                    {data?.qV || "Loading question..."}
                 </Typography>
             </Box>
             <Box sx={{ flex: 1, paddingLeft: 1 }}>
@@ -58,13 +58,13 @@ const C05 = ({ data = {}, handleChange, path }) => {
     );
 };
 
-C05.propTypes = {
+H03.propTypes = {
     data: PropTypes.shape({
         qV: PropTypes.string,
         qU: PropTypes.string,
         typ: PropTypes.string,
-        cV: PropTypes.string,
-        aV: PropTypes.arrayOf(PropTypes.string),
+        cV: PropTypes.arrayOf(PropTypes.string),
+        av: PropTypes.arrayOf(PropTypes.string),
         v: PropTypes.string,
         pt: PropTypes.string
     }),
@@ -72,4 +72,4 @@ C05.propTypes = {
     path: PropTypes.string.isRequired
 };
 
-export default withJsonFormsControlProps(C05);
+export default withJsonFormsControlProps(H03);
