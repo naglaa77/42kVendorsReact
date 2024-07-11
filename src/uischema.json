@@ -190,8 +190,14 @@
                 {
                   "type": "Control",
                   "scope": "#/properties/influence/properties/c04"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c05",
+                  "options": {
+                    "multi": true
+                  }
                 }
-
               ]
             }
           ]

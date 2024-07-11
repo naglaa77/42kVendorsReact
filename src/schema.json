@@ -129,6 +129,20 @@
             "v": { "type": "string" },
             "pt": { "type": "string" }
           }
+        },
+        "c05": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
         }
       },
         "required": [ "c04"]

@@ -37,6 +37,8 @@ import c03Tester from "./tester/c03Tester.js";
 import C03 from "./components/C03.jsx";
 import c04Tester from "./tester/c04Tester.js";
 import C04 from "./components/C04.jsx";
+import c05Tester from "./tester/c05Tester.js";
+import C05 from "./components/C05.jsx";
 
 
 
@@ -90,8 +92,16 @@ const initialData = {
             typ: "yesno",
             cV: "",
             v: "1.0",
+            pt: ""
+        },
+        c05: {
+            qV: ": if yes, in which countries ?",
+            qU: "in :",
+            typ: "countries list with multiple choices",
+            cV: [],
+            v: "1.0",
             pt: "5"
-        }
+        },
     }
 };
 
@@ -113,6 +123,7 @@ const renderers = [
     { tester: c02Tester, renderer: C02 },
     { tester: c03Tester, renderer: C03 },
     { tester: c04Tester, renderer: C04 },
+    { tester: c05Tester, renderer: C05 },
 
 ];
 
