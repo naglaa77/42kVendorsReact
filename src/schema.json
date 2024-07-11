@@ -84,10 +84,54 @@
       "type": "object",
       "properties": {
         "c01": {
-          "type": "string",
-          "default": "bar"
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": { "type": "string" },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        },
+        "c02": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": { "type": "string" },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        },
+        "c03": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        },
+        "c04": {
+          "type": "object",
+          "properties": {
+            "qV": { "type": "string" },
+            "qU": { "type": "string" },
+            "typ": { "type": "string" },
+            "cV": { "type": "string","enum": ["yes", "no"] },
+            "v": { "type": "string" },
+            "pt": { "type": "string" }
+          }
         }
-      }
+      },
+        "required": [ "c04"]
     }
   },
   "required": ["name", "commercialName", "headquarterAddress", "website", "email", "phoneNumber", "linkedinProfile", "effectiveControl"]

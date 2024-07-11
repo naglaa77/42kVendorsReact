@@ -29,8 +29,14 @@ import CustomTextarea from "./components/CustomTextarea.jsx";
 import customTextareTester from "./tester/customTextareTester.js";
 import shortTextTester from "./tester/shortTextTester.js";
 import ShortText from "./components/ShortText.jsx";
-import c10Tester from "./tester/c10Tester.js";
 import C01 from "./components/C01.jsx";
+import c01Tester from "./tester/c01Tester.js";
+import c02Tester from "./tester/c02Tester.js";
+import C02 from "./components/C02.jsx";
+import c03Tester from "./tester/c03Tester.js";
+import C03 from "./components/C03.jsx";
+import c04Tester from "./tester/c04Tester.js";
+import C04 from "./components/C04.jsx";
 
 
 
@@ -54,7 +60,38 @@ const initialData = {
         phoneNumberGroup: ""
     },
     influence: {
-        c01: ''
+        "c01": {
+            qV: "In which country is the VENDOR's registered head office is established?",
+            qU: "Head office registered in:",
+            typ: "uniqCountryCtrl",
+            cV: "",
+            v: "1.0",
+            pt: "5"
+        },
+        "c02": {
+            qV: ": if applicable precise State(s)",
+            qU: "State(s)",
+            typ: "shorttext",
+            cV: "",
+            v: "1.0",
+            pt: "0"
+        },
+        c03: {
+            qV: "In which other countries are the VENDOR's strategic decision centers located?",
+            qU: "Strategic decision centers in:",
+            typ: "country list with multiple choices",
+            cV: [],
+            v: "1.0",
+            pt: "5"
+        },
+        c04: {
+            qV: "Is the VENDOR quoted on a stock exchange?",
+            qU: "Quoted on a stock exchange",
+            typ: "yesno",
+            cV: "",
+            v: "1.0",
+            pt: "5"
+        }
     }
 };
 
@@ -72,7 +109,10 @@ const renderers = [
     { tester: effectiveControlTester, renderer: EffectiveControl },
     { tester: customTextareTester, renderer: CustomTextarea },
     { tester: shortTextTester, renderer: ShortText },
-     { tester: c10Tester, renderer: C01 },
+     { tester: c01Tester, renderer: C01 },
+    { tester: c02Tester, renderer: C02 },
+    { tester: c03Tester, renderer: C03 },
+    { tester: c04Tester, renderer: C04 },
 
 ];
 

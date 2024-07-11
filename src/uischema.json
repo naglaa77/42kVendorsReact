@@ -175,7 +175,23 @@
                 {
                   "type": "Control",
                   "scope": "#/properties/influence/properties/c01"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c02"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c03",
+                  "options": {
+                    "multi": true
+                  }
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/influence/properties/c04"
                 }
+
               ]
             }
           ]
