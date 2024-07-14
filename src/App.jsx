@@ -53,6 +53,8 @@ import H05 from "./components/H05.jsx";
 import h05Tester from "./tester/h05Tester.js";
 import h06Tester from "./tester/h06Tester.js";
 import H06 from "./components/H06.jsx";
+import i01Tester from "./tester/i01Tester.js";
+import I01 from "./components/I01.jsx";
 
 
 
@@ -76,115 +78,19 @@ const initialData = {
         phoneNumberGroup: ""
     },
     influence: {
-        "c01": {
-            qV: "In which country is the VENDOR's registered head office is established?",
-            qU: "Head office registered in:",
-            typ: "uniqCountryCtrl",
-            cV: "",
-            aV: "",
-            v: "1.0",
-            pt: "5"
-        },
-        "c02": {
-            qV: ": if applicable precise State(s)",
-            qU: "State(s)",
-            typ: "shorttext",
-            cV: "",
-            aV: "",
-            v: "1.0",
-            pt: "0"
-        },
-        c03: {
-            qV: "In which other countries are the VENDOR's strategic decision centers located?",
-            qU: "Strategic decision centers in:",
-            typ: "country list with multiple choices",
-            cV: "",
-            aV: [],
-            v: "1.0",
-            pt: "5"
-        },
-        c04: {
-            qV: "Is the VENDOR quoted on a stock exchange?",
-            qU: "Quoted on a stock exchange",
-            typ: "yesno",
-            cV: "",
-            aV: "",
-            v: "1.0",
-            pt: ""
-        },
-        c05: {
-            qV: ": if yes, in which countries ?",
-            qU: "in :",
-            typ: "countries list with multiple choices",
-            cV: "",
-            aV: [],
-            v: "1.0",
-            pt: "5"
-        },
-        c06: {
-            qV: ": please provide the stock code(s) & stock market(s)",
-            qU: "stock code(s) & stock market(s)",
-            typ: "shorttext",
-            cV: "",
-            aV: "",
-            v: "1.0",
-            pt: "0"
-        },
+        c01: "",
+        c02:"",
+        c03: "",
+        c04: "",
+        c05: "",
+        c06: "",
         group: {
-            h01:{
-                qV: ": Do these entities have their registered head office or strategic decision centers not established in a Member State of the EU?",
-                qU: "These entities have their head office or strategic decision centers outside EU",
-                typ: "shorttext",
-                cV: "",
-                aV: "",
-                v: "1.0",
-                pt: "0"
-            },
-            h02:{
-                qV: "",
-                qU: "",
-                typ: "",
-                cV: "",
-                aV: "",
-                v: "1.0",
-                pt: "0"
-            },
-            h03:{
-                qV: ": For all entities HOLDING effective control of the VENDOR, in which countries are their registered head office and strategic decision centers established ?",
-                qU: "Countries where holding entities have head office and strategic decision centers",
-                typ: "countries list with multiple choice",
-                cV: "",
-                aV: "",
-                v: "1.0",
-                pt: "0"
-            },
-            h04:{
-                qV: "",
-                qU: "",
-                typ: "",
-                cV: "",
-                aV: "",
-                v: "1.0",
-                pt: ""
-            },
-            h05:{
-                qV: ":: if yes, in which countries ?",
-                qU: "in :",
-                typ: "countries list with multiple choice",
-                cV: "",
-                aV: "",
-                v: "1.0",
-                pt: "2"
-            },
-            h06:{
-                qV: "",
-                qU: "",
-                typ: "",
-                cV: "",
-                aV: "",
-                v: "",
-                pt: ""
-            }
+            h01:"",
+            h02:"",
+            h03:"",
+            h04:"",
+            h05:"",
+            h06:""
         }
     }
 };
@@ -215,6 +121,7 @@ const renderers = [
     { tester: h04Tester, renderer: H04 },
     { tester: h05Tester, renderer: H05 },
     { tester: h06Tester, renderer: H06 },
+    { tester: i01Tester, renderer: I01 },
 
 ];
 

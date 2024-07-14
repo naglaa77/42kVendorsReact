@@ -276,6 +276,19 @@
                           }
                         }
                       }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/influence/properties/group/properties/i01",
+                      "rule": {
+                        "effect": "DISABLE",
+                        "condition": {
+                          "scope": "#/properties/effectiveControl",
+                          "schema": {
+                            "const": "no"
+                          }
+                        }
+                      }
                     }
                   ]
                 }

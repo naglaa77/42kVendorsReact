@@ -54,123 +54,36 @@
           "title": "Name"
         },
         "commercialNameGroup": {
-          "type": "string",
-          "title": "Commercial Name"
+          "type": "string"
         },
         "address": {
-          "type": "string",
-          "title": "Address"
+          "type": "string"
         },
         "websiteGroup": {
-          "type": "string",
-          "title": "Website"
+          "type": "string"
         },
         "sizeofGroup": {
           "type": "string",
-          "title": "Size of group",
           "enum": ["Self-employed", "1-10 employees", "11-50 employees", "51-200 employees", "201-500 employees", "501-1000 employees", "1001-5000 employees", "5001-10000 employees", "10001+ employees"]
         },
         "emailGroup": {
-          "type": "string",
-          "title": "Email"
+          "type": "string"
         },
         "phoneNumberGroup": {
-          "type": "string",
-          "title": "Phone number"
+          "type": "string"
         }
       }
     },
     "influence": {
       "type": "object",
       "properties": {
-        "c01": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "c02": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "aV": { "type": "string" },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "c03": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "av": {
-              "type": "array",
-              "items": { "type": "string" }
-            },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "c04": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "aV": { "type": "string","enum": ["yes", "no"] },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "c05": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "aV": {
-              "type": "array",
-              "items": { "type": "string" }
-            },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "c06": {
-          "type": "object",
-          "properties": {
-            "qV": { "type": "string" },
-            "qU": { "type": "string" },
-            "typ": { "type": "string" },
-            "cV": { "type": "string" },
-            "aV": { "type": "string" },
-            "v": { "type": "string" },
-            "pt": { "type": "string" }
-          }
-        },
-        "group": {
-          "type": "object",
-          "properties": {
-            "h01": {"type": "object"},
-            "h02": {"type": "object"},
-            "h03": {"type": "object"},
-            "h04": {"type": "object"},
-            "h05": {"type": "object"},
-            "h06": {"type": "object"}
-          }
-        }
+        "c01": {"type": "object"},
+        "c02": {"type": "object"},
+        "c03": {"type": "object"},
+        "c04": {"type": "object"},
+        "c05": {"type": "object"},
+        "c06": {"type": "object"},
+        "group": {"type": "object"}
       },
       "required": ["c04"]
     }
